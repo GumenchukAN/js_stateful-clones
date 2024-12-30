@@ -21,6 +21,7 @@ function transformStateWithClones(state, actions) {
     } else if (action.type === 'clear') {
       stateHistory = {};
     }
+
     states.push({ ...stateHistory });
   }
 
